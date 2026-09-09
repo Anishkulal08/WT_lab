@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Passport Application Form</title>
+
+</head>
+
+<body style="background-color: whitesmoke; font-size: 17px;">
+
+    <div align="center" style="background-color: steelblue; color: white; padding: 20px;">
+
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/021/912/114/small/national-emblem-or-symbol-free-vector.jpg"
+            alt="National Emblem" height="120" width="120">
+
+        <h1>PASSPORT APPLICATION FORM</h1>
+
+        <h3>Government of India, Ministry of External Affairs</h3>
+
+    </div>
+
+    <hr>
+
+
+    <form action="" method="post">
+
+        <table width="95%" border="1" cellspacing="0" cellpadding="10" style="margin-left: 38px;">
+
+
+            <tr>
+
+                <td width="50%" valign="top">
+
+                    <fieldset style="border: 2px solid steelblue;">
+
+                        <legend style="background-color: steelblue; color: white; padding: 5px;">
+                            1. Name
+                        </legend>
+
+                        <table width="100%" cellpadding="8">
+
+                            <tr>
+                                <td>
+                                    <label for="firstname">First Name:</label>
+                                </td>
+
+                                <td>
+                                    <input type="text" name="firstname" id="firstname" placeholder="Enter first name"
+                                        required>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label for="middlename">Middle Name:</label>
+                                </td>
+
+                                <td>
+                                    <input type="text" name="middlename" id="middlename"
+                                        placeholder="Enter middle name">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label for="lastname">Last Name:</label>
+                                </td>
+
+                                <td>
+                                    <input type="text" name="lastname" id="lastname" placeholder="Enter last name"
+                                        required>
+                                </td>
+                            </tr>
+
+                        </table>
+
+                    </fieldset>
+
+                </td>
+
+
+                <td width="50%" valign="top">
+
+                    <fieldset style="border: 2px solid steelblue;">
+
+                        <legend style="background-color: steelblue; color: white; padding: 5px;">
+                            2. Service Required
+                        </legend>
+
+                        <table width="100%" cellpadding="8">
+
+                            <tr>
+
+                                <td>
+                                    <label>Type of Application:</label>
+                                </td>
+
+                                <td>
+
+                                    <input type="radio" name="type_application" id="normal" value="Normal" checked>
+
+                                    <label for="normal">Normal</label>
+
+                                    <br>
+
+                                    <input type="radio" name="type_application" id="tatkal" value="Tatkal">
+
+                                    <label for="tatkal">Tatkal</label>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <label>Booklet Type:</label>
+                                </td>
+
+                                <td>
+
+                                    <input type="radio" name="page" id="page36" value="36" checked>
+
+                                    <label for="page36">36 Pages</label>
+
+                                    <br>
+
+                                    <input type="radio" name="page" id="page60" value="60">
+
+                                    <label for="page60">60 Pages</label>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <label>Validity Required:</label>
+                                </td>
+
+                                <td>
+
+                                    <input type="radio" name="valid" id="valid10" value="10" checked>
+
+                                    <label for="valid10">10 Years</label>
+
+                                    <br>
+
+                                    <input type="radio" name="valid" id="valid18" value="18yrs">
+
+                                    <label for="valid18">Up to Age 18</label>
+
+                                    <br>
+
+                                    <input type="radio" name="valid" id="validna" value="NA">
+
+                                    <label for="validna">Not Applicable</label>
+
+                                </td>
+
+                            </tr>
+
+                        </table>
+
+                    </fieldset>
+
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td width="50%" valign="top">
+
+                    <fieldset style="border: 2px solid steelblue;">
+
+                        <legend style="background-color: steelblue; color: white; padding: 5px;">
+                            3. Personal Details
+                        </legend>
+
+                        <table width="100%" cellpadding="8">
+
+                            <tr>
+
+                                <td>
+                                    <label for="surname">Surname:</label>
+                                </td>
+
+                                <td>
+                                    <input type="text" name="surname" id="surname" placeholder="Enter surname">
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <label for="dateofbirth">Date of Birth:</label>
+                                </td>
+
+                                <td>
+                                    <input type="date" name="dateofbirth" id="dateofbirth">
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td valign="top">
+                                    <label for="address">Address:</label>
+                                </td>
+
+                                <td>
+
+                                    <textarea name="address" id="address" rows="4" cols="25"
+                                        placeholder="Enter your address"></textarea>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <label for="district">District:</label>
+                                </td>
+
+                                <td>
+
+                                    <input type="text" name="district" id="district" placeholder="e.g. Udupi">
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <label for="state">State:</label>
+                                </td>
+
+                                <td>
+
+                                    <select name="state" id="state">
+
+                                        <option value="">Select State</option>
+                                        <option value="karnataka">Karnataka</option>
+                                        <option value="kerala">Kerala</option>
+                                        <option value="maharashtra">Maharashtra</option>
+                                        <option value="gujarat">Gujarat</option>
+                                        <option value="goa">Goa</option>
+                                        <option value="andhra_pradesh">Andhra Pradesh</option>
+                                        <option value="delhi">Delhi</option>
+                                        <option value="haryana">Haryana</option>
+                                        <option value="uttar_pradesh">Uttar Pradesh</option>
+
+                                    </select>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <label for="country">Country (if Abroad):</label>
+                                </td>
+
+                                <td>
+
+                                    <input type="text" id="country" name="country" list="countries"
+                                        placeholder="Enter country">
+
+                                    <datalist id="countries">
+
+                                        <option value="USA">
+                                        <option value="China">
+                                        <option value="Russia">
+                                        <option value="Nepal">
+
+                                    </datalist>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <label>Gender:</label>
+                                </td>
+
+                                <td>
+
+                                    <input type="radio" name="gender" id="male" value="Male">
+
+                                    <label for="male">Male</label>
+
+                                    <br>
+
+                                    <input type="radio" name="gender" id="female" value="Female">
+
+                                    <label for="female">Female</label>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <label for="marital">Marital Status:</label>
+                                </td>
+
+                                <td>
+
+                                    <input type="text" name="marital" id="marital" list="maritalstatus"
+                                        placeholder="Select status">
+
+                                    <datalist id="maritalstatus">
+
+                                        <option value="Single">
+                                        <option value="Married">
+                                        <option value="Widowed">
+
+                                    </datalist>
+
+                                </td>
+
+                            </tr>
+
+                        </table>
+
+                    </fieldset>
+
+                </td>
+
+
+                <td width="50%" valign="top">
+
+                    <fieldset style="border: 2px solid steelblue;">
+
+                        <legend style="background-color: steelblue; color: white; padding: 5px;">
+                            4. Identification & Contact
+                        </legend>
+
+                        <table width="100%" cellpadding="8">
+
+                            <tr>
+
+                                <td>
+                                    <label for="aadhar">Aadhaar:</label>
+                                </td>
+
+                                <td>
+
+                                    <input type="text" name="aadhar" id="aadhar" pattern="[0-9]{12}" maxlength="12"
+                                        placeholder="12-digit Aadhaar" required>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <label for="pan">PAN Number:</label>
+                                </td>
+
+                                <td>
+
+                                    <input type="text" name="pan" id="pan" placeholder="Enter PAN number" required>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <label for="voter">Voter ID:</label>
+                                </td>
+
+                                <td>
+
+                                    <input type="text" name="voter" id="voter" placeholder="If available">
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <label for="phone">Phone Number:</label>
+                                </td>
+
+                                <td>
+
+                                    <input type="tel" name="phone" id="phone" pattern="[0-9]{10}" maxlength="10"
+                                        placeholder="10-digit number">
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <label for="education">
+                                        Educational Qualification:
+                                    </label>
+                                </td>
+
+                                <td>
+
+                                    <input type="text" name="education" id="education"
+                                        placeholder="Enter qualification">
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <label for="email">Email:</label>
+                                </td>
+
+                                <td>
+
+                                    <input type="email" name="email" id="email" placeholder="example@email.com">
+
+                                </td>
+
+                            </tr>
+
+                        </table>
+
+                    </fieldset>
+
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td colspan="2">
+
+                    <fieldset style="border: 2px solid steelblue;">
+
+                        <legend style="background-color: steelblue; color: white; padding: 5px;">
+                            5. Family Details
+                        </legend>
+
+                        <table width="100%" cellpadding="8">
+
+                            <tr>
+
+                                <td width="25%">
+                                    <label for="father">Father's Name:</label>
+                                </td>
+
+                                <td width="25%">
+                                    <input type="text" name="father" id="father" placeholder="Enter father's name">
+                                </td>
+
+                                <td width="25%">
+                                    <label for="fathers">Father's Surname:</label>
+                                </td>
+
+                                <td width="25%">
+                                    <input type="text" name="fathers" id="fathers" placeholder="Enter surname">
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <label for="mother">Mother's Name:</label>
+                                </td>
+
+                                <td>
+                                    <input type="text" name="mother" id="mother" placeholder="Enter mother's name">
+                                </td>
+
+                                <td>
+                                    <label for="mothers">Mother's Surname:</label>
+                                </td>
+
+                                <td>
+                                    <input type="text" name="mothers" id="mothers" placeholder="Enter surname">
+                                </td>
+
+                            </tr>
+
+                        </table>
+
+                    </fieldset>
+
+                </td>
+
+            </tr>
+
+
+
+            <tr>
+
+                <td colspan="2">
+
+                    <fieldset style="border: 2px solid steelblue;">
+
+                        <legend style="background-color: steelblue; color: white; padding: 5px;">
+                            6. Declaration
+                        </legend>
+
+                        <p>
+                            I hereby declare that all the information provided by me in this passport application form is true and correct to the best of my knowledge and belief. I understand that providing false information may result in rejection of my application.
+                        </p>
+
+                        <input type="checkbox" name="declaration" id="declaration" required>
+
+                        <label for="declaration">
+                            I agree to the above declaration.
+                        </label>
+
+                    </fieldset>
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td colspan="2" align="center">
+
+                    <input type="submit" value="Submit"
+                        style="background-color: steelblue; color: white; padding: 10px 25px;">
+
+                    &nbsp;&nbsp;
+
+                    <input type="reset" value="Reset" style="background-color: lightgray; padding: 10px 25px;">
+
+                </td>
+
+            </tr>
+
+        </table>
+
+    </form>
+
+
+    <hr>
+
+    <div align="center" style="background-color: steelblue; color: white; padding: 10px;">
+
+        <p>
+            <b>Passport Application Form</b>
+        </p>
+
+        <p>
+            Government of India, Ministry of External Affairs
+        </p>
+
+        <p>
+            &copy; 2026 Passport Application
+        </p>
+
+    </div>
+
+</body>
+
+</html>
