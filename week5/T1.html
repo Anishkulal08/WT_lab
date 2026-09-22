@@ -3,338 +3,332 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Photo Magazine</title>
+    <title>Photo Magazine</title>
 
-<style>
+    <style>
+        body {
+            background-color: #f4f1f8;
+        }
 
-    body {
-        background-color: #f4f1f8;
-    }
+        .header {
+            text-align: center;
+            background-color: #29235c;
+            color: white;
+            font-size: xx-large;
+            padding: 1em;
+            border-radius: 40px;
+            border: 3px solid #17143d;
+        }
 
-    .header {
-        text-align: center;
-        background-color: #29235c;
-        color: white;
-        font-size: xx-large;
-        padding: 1em;
-        border-radius: 40px;
-        border: 3px solid #17143d;
-    }
+        .nav_hor {
+            text-align: center;
+            font-size: large;
+            background-color: white;
+            padding: 2em;
+            border-radius: 40px;
+            border: 3px solid #29235c;
+            margin-top: 2px;
+        }
 
-    .nav_hor {
-        text-align: center;
-        font-size: large;
-        background-color: white;
-        padding: 2em;
-        border-radius: 40px;
-        border: 3px solid #29235c;
-        margin-top: 2px;
-    }
+        .hr {
+            margin-right: 150px;
+            font-size: larger;
+            text-decoration: none;
+            color: #29235c;
+        }
 
-    .hr {
-        margin-right: 150px;
-        font-size: larger;
-        text-decoration: none;
-        color: #29235c;
-    }
+        .hr:hover {
+            color: #9b51e0;
+        }
 
-    .hr:hover {
-        color: #9b51e0;
-    }
+        .div_main {
+            display: flex;
+        }
 
-    .div_main {
-        display: flex;
-    }
+        .nav_ver {
+            font-size: large;
+            padding: 2em;
+            background-color: white;
+            border-radius: 20px;
+            margin-top: 2em;
+            margin-right: 0.50em;
+            border: 2px solid #29235c;
+        }
 
-    .nav_ver {
-        font-size: large;
-        padding: 2em;
-        background-color: white;
-        border-radius: 20px;
-        margin-top: 2em;
-        margin-right: 0.50em;
-        border: 2px solid #29235c;
-    }
+        .vr {
+            display: block;
+            text-decoration: none;
+            margin-bottom: 1em;
+            background-color: #6c4ab6;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+        }
 
-    .vr {
-        display: block;
-        text-decoration: none;
-        margin-bottom: 1em;
-        background-color: #6c4ab6;
-        color: white;
-        padding: 10px;
-        text-align: center;
-        border-radius: 10px;
-    }
+        .vr:hover {
+            background-color: #29235c;
+        }
 
-    .vr:hover {
-        background-color: #29235c;
-    }
+        .content {
+            flex: 1;
+            padding: 2em;
+            text-align: center;
+            background-color: white;
+            color: black;
+            margin-top: 2em;
+            border-radius: 30px;
+            border: 2px dotted #6c4ab6;
+        }
 
-    .content {
-        flex: 1;
-        padding: 2em;
-        text-align: center;
-        background-color: white;
-        color: black;
-        margin-top: 2em;
-        border-radius: 30px;
-        border: 2px dotted #6c4ab6;
-    }
+        .content h2 {
+            color: #29235c;
+        }
 
-    .content h2 {
-        color: #29235c;
-    }
+        .content h3 {
+            color: #6c4ab6;
+        }
 
-    .content h3 {
-        color: #6c4ab6;
-    }
+        .hero-image {
+            max-width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
 
-    .hero-image {
-        max-width: 100%;
-        height: 300px;
-        object-fit: cover;
-        border-radius: 15px;
-    }
+        .explore {
+            display: inline-block;
+            background-color: #29235c;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+        }
 
-    .explore {
-        display: inline-block;
-        background-color: #29235c;
-        color: white;
-        padding: 12px 20px;
-        border-radius: 10px;
-        text-decoration: none;
-    }
+        .explore:hover {
+            background-color: #9b51e0;
+        }
 
-    .explore:hover {
-        background-color: #9b51e0;
-    }
+        .aside_contact {
+            padding: 2em;
+            margin-left: 0.50em;
+            background-color: #6c4ab6;
+            color: white;
+            border-radius: 2em;
+            height: 20em;
+            margin-top: 2em;
+            border: 2px solid #29235c;
+        }
 
-    .aside_contact {
-        padding: 2em;
-        margin-left: 0.50em;
-        background-color: #6c4ab6;
-        color: white;
-        border-radius: 2em;
-        height: 20em;
-        margin-top: 2em;
-        border: 2px solid #29235c;
-    }
+        .contact_us {
+            color: white;
+        }
 
-    .contact_us {
-        color: white;
-    }
+        .about {
+            background-color: white;
+            margin-top: 2em;
+            padding: 2em;
+            border-radius: 30px;
+            border: 2px dotted #6c4ab6;
+            text-align: center;
+        }
 
-    .about {
-        background-color: white;
-        margin-top: 2em;
-        padding: 2em;
-        border-radius: 30px;
-        border: 2px dotted #6c4ab6;
-        text-align: center;
-    }
+        .about h2 {
+            color: #29235c;
+            font-size: 35px;
+        }
 
-    .about h2 {
-        color: #29235c;
-        font-size: 35px;
-    }
+        .about p {
+            font-size: large;
+            line-height: 1.6;
+        }
 
-    .about p {
-        font-size: large;
-        line-height: 1.6;
-    }
+        .about_box {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
 
-    .about_box {
-        display: flex;
-        justify-content: space-around;
-        margin-top: 20px;
-    }
+        .about_box div {
+            background-color: #f4f1f8;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 15px;
+            width: 25%;
+            border: 1px solid #6c4ab6;
+        }
 
-    .about_box div {
-        background-color: #f4f1f8;
-        padding: 15px;
-        margin: 10px;
-        border-radius: 15px;
-        width: 25%;
-        border: 1px solid #6c4ab6;
-    }
+        .about_box h3 {
+            color: #6c4ab6;
+        }
 
-    .about_box h3 {
-        color: #6c4ab6;
-    }
-
-    footer {
-        text-align: center;
-        margin-top: 2em;
-        background-color: #29235c;
-        color: white;
-        padding: 10px;
-        border-radius: 20px;
-    }
-
-</style>
-```
+        footer {
+            text-align: center;
+            margin-top: 2em;
+            background-color: #29235c;
+            color: white;
+            padding: 10px;
+            border-radius: 20px;
+        }
+    </style>
+    ```
 
 </head>
 
 <body>
 
-```
-<header class="header">
+    ```
+    <header class="header">
 
-    <h1>PhotoMag</h1>
+        <h1>PhotoMag</h1>
 
-    <h3>Explore the world of Photography !!</h3>
+        <h3>Explore the world of Photography !!</h3>
 
-</header>
+    </header>
 
-<nav class="nav_hor">
+    <nav class="nav_hor">
 
-    <a href="#about" class="hr">About</a>
+        <a href="#about" class="hr">About</a>
 
-    <a href="gallary.html" class="hr">Gallary</a>
+        <a href="gallary.html" class="hr">Gallary</a>
 
-    <a href="T1.html" class="hr">Home</a>
+        <a href="T1.html" class="hr">Home</a>
 
-    <a href="#contact" class="hr">Contact</a>
-
-</nav>
-
-<div class="div_main">
-
-    <nav class="nav_ver">
-
-        <h3>Explore</h3>
-
-        <a href="nature.png" class="vr">Nature</a>
-
-        <a href="travel.png" class="vr">Travel</a>
-
-        <a href="people.png" class="vr">People</a>
-
-        <a href="architecture.png" class="vr">Architecture</a>
-
-        <a href="wildlife.png" class="vr">Wildlife</a>
+        <a href="#contact" class="hr">Contact</a>
 
     </nav>
 
-    <main class="content">
+    <div class="div_main">
 
-        <h2 style="font-size:50px; text-align:left;">
-            Welcome to PhotoMag
-        </h2>
+        <nav class="nav_ver">
 
-        <img
-            src="https://www.usnews.com/object/image/00000162-f3a3-d0d5-a57f-fbf3af9b0000/20-mount-rainier-national-park.jpg?update-time=1745872131347&size=responsive640"
-            alt="Beautiful landscape"
-            class="hero-image"
-            width="100%"
-        >
+            <h3>Explore</h3>
 
-        <br><br>
+            <a href="nature.png" class="vr">Nature</a>
 
-        <b>Landscape</b>
+            <a href="travel.png" class="vr">Travel</a>
 
-        <h3>Capture. Create. Inspire.</h3>
+            <a href="people.png" class="vr">People</a>
+
+            <a href="architecture.png" class="vr">Architecture</a>
+
+            <a href="wildlife.png" class="vr">Wildlife</a>
+
+        </nav>
+
+        <main class="content">
+
+            <h2 style="font-size:50px; text-align:left;">
+                Welcome to PhotoMag
+            </h2>
+
+            <img src="https://www.usnews.com/object/image/00000162-f3a3-d0d5-a57f-fbf3af9b0000/20-mount-rainier-national-park.jpg?update-time=1745872131347&size=responsive640"
+                alt="Beautiful landscape" class="hero-image" width="100%">
+
+            <br><br>
+
+            <b>Landscape</b>
+
+            <h3>Capture. Create. Inspire.</h3>
+
+            <p>
+                PhotoMag is an online photography magazine where you can
+                discover beautiful photographs from nature, travel,
+                wildlife, people and architecture.
+            </p>
+
+            <p>
+                Photography allows us to preserve memories and see the
+                world from different perspectives. Explore our collection
+                and get inspired by amazing photographs.
+            </p>
+
+            <a href="gallary.html" class="explore">
+                Explore Photo Library !!
+            </a>
+
+        </main>
+
+        <aside class="aside_contact" id="contact">
+
+            <h2 class="contact_us">Contact Us !!</h2>
+
+            <p>Email : <b>photomag@gmail.com</b></p>
+
+            <p>Phone : <b>9567488990</b></p>
+
+            <p>Address : <b>2nd cross, Manipal, Udupi.</b></p>
+
+        </aside>
+
+    </div>
+
+    <div class="about" id="about">
+
+        <h2>About PhotoMag</h2>
 
         <p>
-            PhotoMag is an online photography magazine where you can
-            discover beautiful photographs from nature, travel,
-            wildlife, people and architecture.
+            PhotoMag is an online photography magazine created for
+            photography lovers and people who enjoy exploring beautiful
+            moments through photographs.
         </p>
 
         <p>
-            Photography allows us to preserve memories and see the
-            world from different perspectives. Explore our collection
-            and get inspired by amazing photographs.
+            Our website brings together photographs from different
+            categories such as nature, travel, wildlife, people and
+            architecture. We aim to provide a simple platform where
+            visitors can explore photographs and discover new perspectives.
         </p>
 
-        <a href="gallary.html" class="explore">
-            Explore Photo Library !!
-        </a>
+        <div class="about_box">
 
-    </main>
+            <div>
 
-    <aside class="aside_contact" id="contact">
+                <h3>Our Vision</h3>
 
-        <h2 class="contact_us">Contact Us !!</h2>
+                <p>
+                    To inspire people to see the beauty of the world
+                    through photography.
+                </p>
 
-        <p>Email : <b>photomag@gmail.com</b></p>
+            </div>
 
-        <p>Phone : <b>9567488990</b></p>
+            <div>
 
-        <p>Address : <b>2nd cross, Manipal, Udupi.</b></p>
+                <h3>Our Mission</h3>
 
-    </aside>
+                <p>
+                    To create a simple and enjoyable platform for
+                    discovering and sharing photographs.
+                </p>
 
-</div>
+            </div>
 
-<div class="about" id="about">
+            <div>
 
-    <h2>About PhotoMag</h2>
+                <h3>Our Categories</h3>
 
-    <p>
-        PhotoMag is an online photography magazine created for
-        photography lovers and people who enjoy exploring beautiful
-        moments through photographs.
-    </p>
+                <p>
+                    Nature, Travel, Wildlife, People and Architecture.
+                </p>
 
-    <p>
-        Our website brings together photographs from different
-        categories such as nature, travel, wildlife, people and
-        architecture. We aim to provide a simple platform where
-        visitors can explore photographs and discover new perspectives.
-    </p>
-
-    <div class="about_box">
-
-        <div>
-
-            <h3>Our Vision</h3>
-
-            <p>
-                To inspire people to see the beauty of the world
-                through photography.
-            </p>
-
-        </div>
-
-        <div>
-
-            <h3>Our Mission</h3>
-
-            <p>
-                To create a simple and enjoyable platform for
-                discovering and sharing photographs.
-            </p>
-
-        </div>
-
-        <div>
-
-            <h3>Our Categories</h3>
-
-            <p>
-                Nature, Travel, Wildlife, People and Architecture.
-            </p>
+            </div>
 
         </div>
 
     </div>
 
-</div>
+    <footer>
 
-<footer>
+        <p>
+            &copy; 2026 PhotoMag. All rights are reserved.
+        </p>
 
-    <p>
-        &copy; 2026 PhotoMag. All rights are reserved.
-    </p>
-
-</footer>
+    </footer>
 
 </body>
 

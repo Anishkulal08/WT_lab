@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lunar Eclipse</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            background: #050816;
+            overflow: hidden;
+        }
+
+        .space {
+            height: 100vh;
+            position: relative;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            padding-top: 30px;
+            font-family: Arial;
+        }
+
+        
+        .star {
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            background: white;
+            border-radius: 50%;
+        }
+
+        .star1 { top: 20%; left: 15%; }
+        .star2 { top: 30%; left: 80%; }
+        .star3 { top: 70%; left: 20%; }
+        .star4 { top: 75%; left: 85%; }
+        .star5 { top: 15%; left: 60%; }
+        .star6 { top: 55%; left: 10%; }
+
+        .earth {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            /* background: linear-gradient(45deg,green,blue); */
+            background-color: #222;
+            border-radius: 50%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 0 30px #246b9c;
+            filter: brightness(60%);
+        }
+
+        .moon {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: #ddd;
+            top: 50%;
+            left: 5%;
+            transform: translateY(-50%);
+            box-shadow: 0 0 20px white;
+
+            animation: moveMoon 15s linear infinite;
+        }
+
+       
+        @keyframes moveMoon {
+
+            0% {
+                left: 5%;
+                background: #fff9f9;
+                box-shadow: 0 0 20px white;
+            }
+            25%{
+              left:25%;
+              background: white;
+              box-shadow: 0 0 20px white;
+            }
+            40%{
+              left: 40%;
+              background: #515050;
+              box-shadow: 0 0 20px  white;
+            }
+
+            45% {
+                left: 45%;
+                background: #515050;
+                box-shadow: 0 0 15px  white;
+            }
+
+            50% {
+                left: 50%;
+                background: black;
+                box-shadow:0 0 25px white ;
+            }
+
+            55% {
+                left: 55%;
+                background:  #515050;
+                box-shadow: 0 0 15px  white;
+            }
+80%{
+              left:80%;
+              background: white;
+              box-shadow: 0 0 20px white;
+            }
+            100% {
+                left: 95%;
+                background: #ddd;
+                box-shadow: 0 0 20px white;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="space">
+
+        <h1>Lunar Eclipse</h1>
+        <div class="star star1"></div>
+        <div class="star star2"></div>
+        <div class="star star3"></div>
+        <div class="star star4"></div>
+        <div class="star star5"></div>
+        <div class="star star6"></div>
+
+       
+        <!-- <div class="earth"></div> -->
+         <img src="https://pngimg.com/d/earth_PNG15.png" class="earth">
+        <div class="moon"></div>
+
+    </div>
+
+</body>
+</html>

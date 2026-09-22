@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd or Even</title>
+</head>
+<body>
+    <h1>Check number for odd or even</h1>
+    <button id="btn" onclick="even()">check number</button>
+    <p id="res"></p>
+    <script>
+        function even(){
+            let n=prompt("Enter number to check for odd or even:","");
+            if(Number(n)){
+                if(n%2==0){
+                    document.getElementById("res").innerText=n+" is Even number";
+                }else{
+                    document.getElementById("res").innerText=n+"  is Odd number";
+                }
+               
+            }else{
+                 document.getElementById("res").innerText="Invalid input";
+            }
+        }
+    </script>
+</body>
+</html>

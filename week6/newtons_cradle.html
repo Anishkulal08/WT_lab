@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Newton's Cradle</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            background: #111827;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        h1 {
+            position: absolute;
+            top: 30px;
+            width: 100%;
+            text-align: center;
+            color: white;
+            font-family: Arial;
+        }
+
+        .cradle {
+            width: 500px;
+            height: 400px;
+            position: relative;
+        }
+
+        .top {
+            position: absolute;
+            width: 360px;
+            height: 14px;
+            background: #555;
+            top: 50px;
+            left: 70px;
+            border-radius: 10px;
+        }
+
+        .side {
+            position: absolute;
+            width: 12px;
+            height: 280px;
+            background: #555;
+            top: 50px;
+            border-radius: 10px;
+        }
+
+        .left {
+            left: 70px;
+            transform: rotate(25deg);
+            transform-origin: top;
+        }
+
+        .right {
+            right: 70px;
+            transform: rotate(-25deg);
+            transform-origin: top;
+        }
+
+        .balls {
+            position: absolute;
+            top: 64px;
+            left: 130px;
+            width: 240px;
+            height: 280px;
+            display: flex;
+            justify-content:flex-start;
+        }
+
+        .pendulum {
+            width: 45px;
+            height: 280px;
+            position: relative;
+            transform-origin: top center;
+        }
+
+        .string {
+            position: absolute;
+            width: 3px;
+            height: 210px;
+            background: #aaa;
+            left: 21px;
+            top: 0;
+        }
+
+        .ball {
+            position: absolute;
+            width: 45px;
+            height: 45px;
+            background: linear-gradient(135deg, #f5f5f5, #777);
+            border-radius: 50%;
+            left: 0;
+            top: 205px;
+            box-shadow: 4px 6px 10px #000;
+        }
+
+        .pendulum:first-child {
+            animation: leftSwing 2s ease-in-out infinite;
+        }
+
+        .pendulum:last-child {
+            animation: rightSwing 2s ease-in-out infinite;
+        }
+
+        @keyframes leftSwing {
+            0%, 50%, 100% {
+                transform: rotate(0deg);
+            }
+
+            25% {
+                transform: rotate(35deg);
+            }
+        }
+
+        @keyframes rightSwing {
+            0%, 50%, 100% {
+                transform: rotate(0deg);
+            }
+
+            75% {
+                transform: rotate(-35deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Newton's Cradle</h1>
+
+    <div class="cradle">
+        <div class="top"></div>
+
+        <div class="side left"></div>
+        <div class="side right"></div>
+
+        <div class="balls">
+
+            <div class="pendulum">
+                <div class="string"></div>
+                <div class="ball"></div>
+            </div>
+
+            <div class="pendulum">
+                <div class="string"></div>
+                <div class="ball"></div>
+            </div>
+
+            <div class="pendulum">
+                <div class="string"></div>
+                <div class="ball"></div>
+            </div>
+
+            <div class="pendulum">
+                <div class="string"></div>
+                <div class="ball"></div>
+            </div>
+
+            <div class="pendulum">
+                <div class="string"></div>
+                <div class="ball"></div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

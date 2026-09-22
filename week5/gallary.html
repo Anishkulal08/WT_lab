@@ -4,288 +4,294 @@
 
 <head>
 
-```
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>PhotoMag Gallery</title>
+    <title>PhotoMag Gallery</title>
 
-<style>
-
-    body {
-        background-color: #f4f1f8;
-    }
-
-    .header {
-        text-align: center;
-        background-color: #29235c;
-        color: white;
-        padding: 20px;
-        border-radius: 40px;
-        border: 3px solid #17143d;
-    }
-
-    .nav {
-        text-align: center;
-        background-color: white;
-        padding: 20px;
-        margin-top: 5px;
-        border-radius: 40px;
-        border: 3px solid #29235c;
-    }
-
-    .nav a {
-        margin-right: 100px;
-        text-decoration: none;
-        font-size: larger;
-        color: #29235c;
-    }
-
-    .nav a:hover {
-        color: #9b51e0;
-    }
-
-    h1 {
-        text-align: center;
-        color: #29235c;
-    }
-
-    .category {
-        background-color: white;
-        margin: 25px;
-        padding: 20px;
-        border-radius: 25px;
-        border: 2px dotted #6c4ab6;
-        text-align: center;
-    }
-
-    .category h2 {
-        color: #6c4ab6;
-    }
-
-    .photo {
-        display: inline-block;
-        width: 28%;
-        margin: 1%;
-        vertical-align: top;
-    }
-
-    .photo img {
-        width: 100%;
-        height: 220px;
-        border-radius: 15px;
-        border: 2px solid #29235c;
-    }
-
-    .photo p {
-        color: #555555;
-        font-size: large;
-    }
-
-    footer {
-        text-align: center;
-        background-color: #29235c;
-        color: white;
-        padding: 15px;
-        border-radius: 20px;
-        margin-top: 20px;
-    }
-
-    @media screen and (min-width: 992px) {
-
-        .photo {
-            width: 28%;
+    <style>
+        body {
+            background-color: #f4f1f8;
         }
 
-    }
+        .header {
+            text-align: center;
+            background-color: #29235c;
+            color: white;
+            padding: 20px;
+            border-radius: 40px;
+            border: 3px solid #17143d;
+        }
 
-    @media screen and (min-width: 768px) and (max-width: 991px) {
-
-        .photo {
-            width: 42%;
+        .nav {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            margin-top: 5px;
+            border-radius: 40px;
+            border: 3px solid #29235c;
         }
 
         .nav a {
-            margin-right: 40px;
+            margin-right: 100px;
+            text-decoration: none;
+            font-size: larger;
+            color: #29235c;
         }
 
-    }
-
-    @media screen and (max-width: 767px) {
-
-        .header h1 {
-            font-size: 30px;
+        .nav a:hover {
+            color: #9b51e0;
         }
 
-        .header h3 {
-            font-size: 16px;
-        }
-
-        .nav a {
-            display: block;
-            margin: 15px;
+        h1 {
+            text-align: center;
+            color: #29235c;
         }
 
         .category {
-            margin: 15px;
-            padding: 15px;
+            background-color: white;
+            margin: 25px;
+            padding: 20px;
+            border-radius: 25px;
+            border: 2px dotted #6c4ab6;
+            text-align: center;
+        }
+
+        .category h2 {
+            color: #6c4ab6;
         }
 
         .photo {
-            display: block;
-            width: 90%;
-            margin: 20px auto;
+            display: inline-block;
+            width: 28%;
+            margin: 1%;
+            vertical-align: top;
         }
 
-    }
+        .photo img {
+            width: 100%;
+            height: 220px;
+            border-radius: 15px;
+            border: 2px solid #29235c;
+        }
 
-</style>
-```
+        .photo p {
+            color: #555555;
+            font-size: large;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #29235c;
+            color: white;
+            padding: 15px;
+            border-radius: 20px;
+            margin-top: 20px;
+        }
+
+        @media screen and (min-width: 992px) {
+
+            .photo {
+                width: 28%;
+            }
+
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 991px) {
+
+            .photo {
+                width: 42%;
+            }
+
+            .nav a {
+                margin-right: 40px;
+            }
+
+        }
+
+        @media screen and (max-width: 767px) {
+
+            .header h1 {
+                font-size: 30px;
+            }
+
+            .header h3 {
+                font-size: 16px;
+            }
+
+            .nav a {
+                display: block;
+                margin: 15px;
+            }
+
+            .category {
+                margin: 15px;
+                padding: 15px;
+            }
+
+            .photo {
+                display: block;
+                width: 90%;
+                margin: 20px auto;
+            }
+
+        }
+    </style>
+    ```
 
 </head>
 
 <body>
 
-```
-<header class="header">
+    ```
+    <header class="header">
 
-    <h1>PhotoMag Gallery</h1>
+        <h1>PhotoMag Gallery</h1>
 
-    <h3>Explore. Capture. Inspire.</h3>
+        <h3>Explore. Capture. Inspire.</h3>
 
-</header>
+    </header>
 
-<nav class="nav">
+    <nav class="nav">
 
-    <a href="T1.html">Home</a>
+        <a href="T1.html">Home</a>
 
-    <a href="gallary.html">Gallery</a>
+        <a href="gallary.html">Gallery</a>
 
-    <a href="T1.html#about">About</a>
+        <a href="T1.html#about">About</a>
 
-    <a href="T1.html#contact">Contact</a>
+        <a href="T1.html#contact">Contact</a>
 
-</nav>
+    </nav>
 
-<h1>Photo Gallery</h1>
+    <h1>Photo Gallery</h1>
 
 
-<div class="category">
+    <div class="category">
 
-    <h2>Nature</h2>
+        <h2>Nature</h2>
 
-    <div class="photo">
-        <img src="https://picjumbo.com/wp-content/uploads/beautiful-nature-scenery-free-photo-2210x1473.jpg" alt="Nature">
-        <p>Beautiful natural landscape</p>
+        <div class="photo">
+            <img src="https://picjumbo.com/wp-content/uploads/beautiful-nature-scenery-free-photo-2210x1473.jpg"
+                alt="Nature">
+            <p>Beautiful natural landscape</p>
+        </div>
+
+        <div class="photo">
+            <img src="https://images.pexels.com/photos/236047/pexels-photo-236047.jpeg?cs=srgb&dl=landscape-nature-sky-236047.jpg&fm=jpg"
+                alt="Nature">
+            <p>Peaceful mountain view</p>
+        </div>
+
+        <div class="photo">
+            <img src="https://wallpapercave.com/wp/Ex9MlTC.jpg" alt="Nature">
+            <p>Beautiful scenery</p>
+        </div>
+
     </div>
 
-    <div class="photo">
-        <img src="https://images.pexels.com/photos/236047/pexels-photo-236047.jpeg?cs=srgb&dl=landscape-nature-sky-236047.jpg&fm=jpg" alt="Nature">
-        <p>Peaceful mountain view</p>
+
+    <div class="category">
+
+        <h2>Travel</h2>
+
+        <div class="photo">
+            <img src="https://images.adsttc.com/media/images/5d44/14fa/284d/d1fd/3a00/003d/large_jpg/eiffel-tower-in-paris-151-medium.jpg?1564742900"
+                alt="Travel">
+            <p>Beautiful travel destination</p>
+        </div>
+
+        <div class="photo">
+            <img src="https://wallpapers.com/images/hd/travel-background-pn3dnoviyptmke5x.jpg" alt="Travel">
+            <p>Exploring new places</p>
+        </div>
+
+        <div class="photo">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.kUFBw1GjhRnPf-MDgkosVgHaDt?r=0&pid=Api&P=0&h=180" alt="Travel">
+            <p>Unforgettable journey</p>
+        </div>
+
     </div>
 
-    <div class="photo">
-        <img src="https://wallpapercave.com/wp/Ex9MlTC.jpg" alt="Nature">
-        <p>Beautiful scenery</p>
+
+    <div class="category">
+
+        <h2>People</h2>
+
+        <div class="photo">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.5fA9OHbp5FGhcqDzwNLLHAHaE7?r=0&pid=Api&P=0&h=180" alt="People">
+            <p>People and emotions</p>
+        </div>
+
+        <div class="photo">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.Q37gUQ42af1dJKZNBF_39AHaEO?r=0&pid=Api&P=0&h=180" alt="People">
+            <p>Beautiful moments</p>
+        </div>
+
+        <div class="photo">
+            <img src="https://media.tegna-media.com/assets/WFAA/images/c6ec141b-f37a-4190-a4ba-0770ceae5f19/c6ec141b-f37a-4190-a4ba-0770ceae5f19_1920x1080.jpg"
+                alt="People">
+            <p>Capturing memories</p>
+        </div>
+
     </div>
 
-</div>
 
+    <div class="category">
 
-<div class="category">
+        <h2>Architecture</h2>
 
-    <h2>Travel</h2>
+        <div class="photo">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.kSHeiP-M9IV8soiwI7FvSQHaFC?r=0&pid=Api&P=0&h=180"
+                alt="Architecture">
+            <p>Modern architecture</p>
+        </div>
 
-    <div class="photo">
-        <img src="https://images.adsttc.com/media/images/5d44/14fa/284d/d1fd/3a00/003d/large_jpg/eiffel-tower-in-paris-151-medium.jpg?1564742900" alt="Travel">
-        <p>Beautiful travel destination</p>
+        <div class="photo">
+            <img src="https://cdn.pixabay.com/photo/2020/04/17/12/42/humayun-5055050_1280.jpg" alt="Architecture">
+            <p>Creative building designs</p>
+        </div>
+
+        <div class="photo">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.rsivU68xTYmjmOLnSZnLQgHaE3?r=0&pid=Api&P=0&h=180"
+                alt="Architecture">
+            <p>Beautiful structures</p>
+        </div>
+
     </div>
 
-    <div class="photo">
-        <img src="https://wallpapers.com/images/hd/travel-background-pn3dnoviyptmke5x.jpg" alt="Travel">
-        <p>Exploring new places</p>
+
+    <div class="category">
+
+        <h2>Wildlife</h2>
+
+        <div class="photo">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.ffUy8g2XwpxYpDCvY6oBVwHaJQ?r=0&pid=Api&P=0&h=180"
+                alt="Wildlife">
+            <p>Wild animals in nature</p>
+        </div>
+
+        <div class="photo">
+            <img src="https://121clicks.com/wp-content/uploads/2024/08/indian-wildlife-photography-best-photos-09.jpg"
+                alt="Wildlife">
+            <p>Wildlife photography</p>
+        </div>
+
+        <div class="photo">
+            <img src="https://121clicks.com/wp-content/uploads/2024/09/natonal-geographic-india-best-wildlife-photos-03.jpg"
+                alt="Wildlife">
+            <p>Animals in their habitat</p>
+        </div>
+
     </div>
 
-    <div class="photo">
-        <img src="https://tse4.mm.bing.net/th/id/OIP.kUFBw1GjhRnPf-MDgkosVgHaDt?r=0&pid=Api&P=0&h=180" alt="Travel">
-        <p>Unforgettable journey</p>
-    </div>
 
-</div>
+    <footer>
 
+        <p>&copy; 2026 PhotoMag. All rights are reserved.</p>
 
-<div class="category">
-
-    <h2>People</h2>
-
-    <div class="photo">
-        <img src="https://tse2.mm.bing.net/th/id/OIP.5fA9OHbp5FGhcqDzwNLLHAHaE7?r=0&pid=Api&P=0&h=180" alt="People">
-        <p>People and emotions</p>
-    </div>
-
-    <div class="photo">
-        <img src="https://tse1.mm.bing.net/th/id/OIP.Q37gUQ42af1dJKZNBF_39AHaEO?r=0&pid=Api&P=0&h=180" alt="People">
-        <p>Beautiful moments</p>
-    </div>
-
-    <div class="photo">
-        <img src="https://media.tegna-media.com/assets/WFAA/images/c6ec141b-f37a-4190-a4ba-0770ceae5f19/c6ec141b-f37a-4190-a4ba-0770ceae5f19_1920x1080.jpg" alt="People">
-        <p>Capturing memories</p>
-    </div>
-
-</div>
-
-
-<div class="category">
-
-    <h2>Architecture</h2>
-
-    <div class="photo">
-        <img src="https://tse1.mm.bing.net/th/id/OIP.kSHeiP-M9IV8soiwI7FvSQHaFC?r=0&pid=Api&P=0&h=180" alt="Architecture">
-        <p>Modern architecture</p>
-    </div>
-
-    <div class="photo">
-        <img src="https://cdn.pixabay.com/photo/2020/04/17/12/42/humayun-5055050_1280.jpg" alt="Architecture">
-        <p>Creative building designs</p>
-    </div>
-
-    <div class="photo">
-        <img src="https://tse4.mm.bing.net/th/id/OIP.rsivU68xTYmjmOLnSZnLQgHaE3?r=0&pid=Api&P=0&h=180" alt="Architecture">
-        <p>Beautiful structures</p>
-    </div>
-
-</div>
-
-
-<div class="category">
-
-    <h2>Wildlife</h2>
-
-    <div class="photo">
-        <img src="https://tse2.mm.bing.net/th/id/OIP.ffUy8g2XwpxYpDCvY6oBVwHaJQ?r=0&pid=Api&P=0&h=180" alt="Wildlife">
-        <p>Wild animals in nature</p>
-    </div>
-
-    <div class="photo">
-        <img src="https://121clicks.com/wp-content/uploads/2024/08/indian-wildlife-photography-best-photos-09.jpg" alt="Wildlife">
-        <p>Wildlife photography</p>
-    </div>
-
-    <div class="photo">
-        <img src="https://121clicks.com/wp-content/uploads/2024/09/natonal-geographic-india-best-wildlife-photos-03.jpg" alt="Wildlife">
-        <p>Animals in their habitat</p>
-    </div>
-
-</div>
-
-
-<footer>
-
-    <p>&copy; 2026 PhotoMag. All rights are reserved.</p>
-
-</footer>
+    </footer>
 
 </body>
 
